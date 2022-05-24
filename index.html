@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crochet</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        102.7deg,
+        rgb(253, 218, 255) 8.2%,
+        rgb(223, 173, 252) 19.6%,
+        rgb(173, 205, 252) 36.8%,
+        rgb(173, 252, 244) 73.2%,
+        rgb(202, 248, 208) 90.9%
+      );
+    }
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: underline;
+    }
+    hr {
+      color: #86a1f3;
+      border-width: 2px;
+    }
+    h2 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    img {
+      display: block;
+      margin: 40px auto;
+      border-radius: 5%;
+    }
+    p {
+      text-align: center;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 100;
+      line-height: 1.5;
+    }
+    button {
+      display: block;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 20px 30px;
+      text-rendering: auto;
+      cursor: pointer;
+      background-color: #86a1f3;
+      color: #f6378f;
+      width: 30%;
+      box-shadow: #6f91f7;
+      border-radius: 10%;
+    }
+    button:hover {
+      background-color: #ffdd00;
+      transition: 200ms ease-in-out;
+    }
+    a {
+      display: block;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-weight: 300;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <h1>Modern Crochet</h1>
+    <h2>A Useful Artform</h2>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/029/410/original/learn-to-crochet-1.jpg?1647443767"
+      alt="crochetrainbow"
+    />
+    <hr />
+    <p>
+      <strong>Crochet</strong>
+      is an basic but useful artform dating back to the 1500's! Learning to make
+      a garmet, blanket, or even a wallhanging creates a feeling of
+      accomplishment and pride. Yarn is typically used in crochet and comes in a
+      wide variety of weights, colors, and compositions.
+    </p>
+    <hr />
+    <a href="https://www.lionbrand.com/" target="_blank">
+      <em>Explore Yarn Options Here</em>
+    </a>
+    <br />
+    <button>
+      <strong>Free Starter Pattern</strong>
+    </button>
+    <script>
+      function freePattern() {
+        let name = prompt("What is your name?");
+        let Email = prompt("what is your email address?");
+        let response = prompt("Would you like a free starter pattern?")
+          .toLowerCase()
+          .trim();
+        if (response === "yes") {
+          alert("Thank you, " + name + " your pattern is on the way!");
+        } else {
+          alert("Thank you, " + name + " please visit again soon!");
+        }
+      }
+      let freeStarterPattern = document.querySelector("button");
+      freeStarterPattern.addEventListener = ("click", freePattern);
+    </script>
+  </body>
+</html>
